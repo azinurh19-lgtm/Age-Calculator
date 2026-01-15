@@ -4,43 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Professional Age Calculator</title>
+
 <style>
-  /* Cinematic Dark Luxury Theme */
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-  }
-
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
   body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #1f1c2c, #928dab);
     color: #fff;
-    overflow: hidden;
+    padding: 20px;
   }
-
   .calculator {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 40px 50px;
+    background: rgba(0,0,0,0.7);
+    padding: 35px 30px;
     border-radius: 25px;
-    box-shadow: 0 0 40px rgba(0,0,0,0.6), 0 0 80px rgba(146, 141, 171, 0.5);
+    box-shadow: 0 0 40px rgba(0,0,0,0.6), 0 0 80px rgba(146,141,171,0.5);
     text-align: center;
-    width: 350px;
+    width: 100%;
+    max-width: 400px;
   }
-
   h1 {
     font-size: 2rem;
-    margin-bottom: 30px;
-    color: #f8f1f1;
+    margin-bottom: 15px;
     text-shadow: 2px 2px 8px #000;
   }
-
   input[type="date"] {
     padding: 12px;
     width: 100%;
@@ -48,19 +39,10 @@
     border: none;
     margin-bottom: 20px;
     font-size: 1rem;
-    outline: none;
     background: rgba(255,255,255,0.1);
     color: #fff;
     text-align: center;
-    box-shadow: inset 0 0 8px rgba(255,255,255,0.2);
-    transition: all 0.3s ease;
   }
-
-  input[type="date"]:focus {
-    background: rgba(255,255,255,0.2);
-    box-shadow: inset 0 0 12px rgba(255,255,255,0.4);
-  }
-
   button {
     padding: 12px 30px;
     font-size: 1rem;
@@ -70,38 +52,88 @@
     background: linear-gradient(45deg, #ff416c, #ff4b2b);
     color: #fff;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255,75,43,0.4);
+    margin-bottom: 20px;
   }
-
-  button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(255,75,43,0.6);
-  }
-
   .result {
-    margin-top: 30px;
-    font-size: 1.5rem;
+    margin-top: 20px;
+    font-size: 1.3rem;
     padding: 15px;
     background: rgba(255,255,255,0.1);
     border-radius: 15px;
-    box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
-    transition: all 0.3s ease;
+    margin-bottom: 20px;
   }
-
 </style>
 </head>
+
 <body>
 
 <div class="calculator">
+
   <h1>Age Calculator</h1>
+
+  <!-- 🔴 TOP BANNER AD -->
+  <div style="text-align:center;margin:10px 0;">
+    <script>
+      atOptions = {
+        'key' : '1b980858c33313b17f49d1c7129929eb',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/1b980858c33313b17f49d1c7129929eb/invoke.js"></script>
+  </div>
+
+  <!-- 🔴 SECOND BANNER (Input ke neeche) -->
+  <div style="text-align:center;margin:15px 0;">
+    <script async src="https://pl28482615.effectivegatecpm.com/8fd376dc998b3e2329b5c02e54f27c44/invoke.js"></script>
+    <div id="container-8fd376dc998b3e2329b5c02e54f27c44"></div>
+  </div>
+
   <input type="date" id="dob" max="">
   <button onclick="calculateAge()">Calculate Age</button>
+
+  <!-- 🔴 THIRD BANNER (Result ke upar) -->
+  <div style="text-align:center;margin:15px 0;">
+    <script>
+      atOptions = {
+        'key' : '165922481cafd5a30016206ece9b4cab',
+        'format' : 'iframe',
+        'height' : 300,
+        'width' : 160,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/165922481cafd5a30016206ece9b4cab/invoke.js"></script>
+  </div>
+
   <div class="result" id="result"></div>
+
+  <!-- 🔴 FOURTH BANNER (Result ke neeche) -->
+  <div style="text-align:center;margin:15px 0;">
+    <script async src="https://pl28482615.effectivegatecpm.com/8fd376dc998b3e2329b5c02e54f27c44/invoke.js"></script>
+    <div id="container-8fd376dc998b3e2329b5c02e54f27c44"></div>
+  </div>
+
+  <!-- 🔴 FIFTH BANNER (Bottom Footer) -->
+  <div style="text-align:center;margin:15px 0;">
+    <script>
+      atOptions = {
+        'key' : '1b980858c33313b17f49d1c7129929eb',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/1b980858c33313b17f49d1c7129929eb/invoke.js"></script>
+  </div>
+
 </div>
 
 <script>
-  // Set max date to today
+  // Max date today
   document.getElementById('dob').max = new Date().toISOString().split("T")[0];
 
   function calculateAge() {
@@ -126,9 +158,8 @@
       months += 12;
     }
 
-    document.getElementById('result').innerHTML = `
-      <strong>Age:</strong> ${years} Years, ${months} Months, ${days} Days
-    `;
+    document.getElementById('result').innerHTML =
+      `<strong>Age:</strong> ${years} Years, ${months} Months, ${days} Days`;
   }
 </script>
 
